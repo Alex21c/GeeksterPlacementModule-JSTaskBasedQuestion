@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="mlcToDoABriefAndMeaningfulDescriptionOfMyWebsite"
+    />
+    <meta
+      name="keywords"
+      content="mlcToDoKeyword1, mlcToDoKeyword2, mlcToDoKeywordN"
+    />
+    <meta name="author" content="mlcToDoFirstNameAndLastName" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>mlcToDoMyWebsiteTitle</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="bg-[#343d3f] text-[#e8eaed] text-[1.2rem] items-center">
+    <div
+      class="border-[.12rem] border-yellow-100 rounded-xl p-[2rem] m-[auto] w-[25rem] mt-[2rem] shadow-yellow-200 shadow-md flex flex-col gap-[1rem]"
+    >
+      <header>
+        <h1 class="text-[2rem]">
+          <a
+            class="underline font-medium"
+            href="https://sadanandpai.github.io/frontend-mini-challenges/javascript/src/challenges/counter/"
+            title="Original Question URL"
+            >Q.1 Counter</a
+          >
+        </h1>
+      </header>
+
+      <section class="flex flex-col gap-[1rem] items-center">
+        <div class="font-medium text-[3rem]" id="divResultValue">0</div>
+        <div>
+          <button
+            class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[2rem] transition hover:bg-yellow-300 h-[3rem] w-[3rem] border-[.15rem] border-stone-200 opacity-[.8] hover:opacity-[1]"
+            id="divBtnMinus"
+          >
+            -
+          </button>
+          <button
+            class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[2rem] transition hover:bg-yellow-300 h-[3rem] w-[3rem] border-[.15rem] border-stone-200 opacity-[.8] hover:opacity-[1]"
+            id="divBtnPlus"
+          >
+            +
+          </button>
+        </div>
+        <div class="flex gap-[.5rem] items-center">
+          <span>Increment/Decrement by:</span>
+          <input
+            type="number"
+            class="p-[.5rem] w-[5rem] rounded-md text-[#343d3f] font-medium text-[1.3rem] bg-stone-200"
+            value="1"
+            id="incrementDecrementBy"
+          />
+        </div>
+        <button
+          class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[2rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[100%] opacity-[.8] hover:opacity-[1]"
+          id="btnReset"
+        >
+          Reset
+        </button>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
