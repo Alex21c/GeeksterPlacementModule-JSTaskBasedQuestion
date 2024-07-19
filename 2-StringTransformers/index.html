@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Q.2 String Transformers" />
+    <meta
+      name="keywords"
+      content="Q.2 String Transformers, javascript, geekster placement module"
+    />
+    <meta name="author" content="Abhishek kumar" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Q.2 String Transformers</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="bg-[#343d3f] text-[#e8eaed] text-[1.2rem] items-center">
+    <div
+      class="border-[.12rem] border-yellow-100 rounded-2xl m-[auto] mb-[2rem] w-[45rem] mt-[2rem] shadow-yellow-100 shadow-md flex flex-col gap-[1rem]"
+    >
+      <header
+        class="flex gap-[.3rem] flex-col bg-yellow-200 rounded-t-xl p-[1rem] text-[#343d3f]"
+      >
+        <h1 class="text-[2rem]">
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            href="https://sadanandpai.github.io/frontend-mini-challenges/javascript/src/challenges/string-transformers/"
+            title="Original Question URL"
+            >Q.2 String Transformers</a
+          >
+        </h1>
+        <h2>
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Author: Abhishek kumar"
+            href="https://www.linkedin.com/in/alex21c/"
+            >Abhishek kumar</a
+          >
+          |
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Geekster"
+            href="https://www.geekster.in/"
+            >Geekster</a
+          >
+          FS-14 Batch
+        </h2>
+      </header>
+
+      <section class="flex flex-col gap-[2rem] items-center p-[2rem] pt-[1rem]">
+        <textarea
+          class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.5rem] rounded-md w-[100%] outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300"
+          type="search"
+          id="textareaHavingData"
+        >
+this is a normal sentence to transform</textarea
+        >
+        <div
+          class="flex flex-col gap-[.5rem] bg-yellow-200 text-[#343d3f] p-[1rem] rounded-md w-[100%] relative"
+        >
+          <span
+            class="bg-[#343d3f] border-[.10rem] border-stone-500 text-stone-200 w-[7rem] px-[1rem] py-[.5rem] rounded-md text-[.9rem] top-[-1.5rem] absolute"
+            >Lower Case</span
+          >
+          <span id="spanLowerCase"
+            >this is a normal sentence to transform
+          </span>
+        </div>
+        <div
+          class="flex flex-col gap-[.5rem] bg-yellow-200 text-[#343d3f] p-[1rem] rounded-md w-[100%] relative"
+        >
+          <span
+            class="bg-[#343d3f] border-[.10rem] border-stone-500 text-stone-200 w-[7rem] px-[1rem] py-[.5rem] rounded-md text-[.9rem] top-[-1.5rem] absolute"
+            >Upper Case</span
+          >
+          <span id="spanUpperCase"
+            >this is a normal sentence to transform
+          </span>
+        </div>
+        <div
+          class="flex flex-col gap-[.5rem] bg-yellow-200 text-[#343d3f] p-[1rem] rounded-md w-[100%] relative"
+        >
+          <span
+            class="bg-[#343d3f] border-[.10rem] border-stone-500 text-stone-200 w-[7rem] px-[1rem] py-[.5rem] rounded-md text-[.9rem] top-[-1.5rem] absolute"
+            >Camel Case</span
+          >
+          <span id="spanCamelCase"
+            >this is a normal sentence to transform
+          </span>
+        </div>
+        <div
+          class="flex flex-col gap-[.5rem] bg-yellow-200 text-[#343d3f] p-[1rem] rounded-md w-[100%] relative"
+        >
+          <span
+            class="bg-[#343d3f] border-[.10rem] border-stone-500 text-stone-200 w-[7rem] px-[1rem] py-[.5rem] rounded-md text-[.9rem] top-[-1.5rem] absolute"
+            >Pascal Case</span
+          >
+          <span id="spanPascalCase"
+            >this is a normal sentence to transform
+          </span>
+        </div>
+        <div
+          class="flex flex-col gap-[.5rem] bg-yellow-200 text-[#343d3f] p-[1rem] rounded-md w-[100%] relative"
+        >
+          <span
+            class="bg-[#343d3f] border-[.10rem] border-stone-500 text-stone-200 w-[7rem] px-[1rem] py-[.5rem] rounded-md text-[.9rem] top-[-1.5rem] absolute"
+            >Snake Case</span
+          >
+          <span id="spanSnakeCase"
+            >this is a normal sentence to transform
+          </span>
+        </div>
+        <div
+          class="flex flex-col gap-[.5rem] bg-yellow-200 text-[#343d3f] p-[1rem] rounded-md w-[100%] relative"
+        >
+          <span
+            class="bg-[#343d3f] border-[.10rem] border-stone-500 text-stone-200 w-[7rem] px-[1rem] py-[.5rem] rounded-md text-[.9rem] top-[-1.5rem] absolute"
+            >Kebab Case</span
+          >
+          <span id="spanKebabCase"
+            >this is a normal sentence to transform
+          </span>
+        </div>
+        <div
+          class="flex flex-col gap-[.5rem] bg-yellow-200 text-[#343d3f] p-[1rem] rounded-md w-[100%] relative"
+        >
+          <span
+            class="bg-[#343d3f] border-[.10rem] border-stone-500 text-stone-200 w-[7rem] px-[1rem] py-[.5rem] rounded-md text-[.9rem] top-[-1.5rem] absolute"
+            >Trim</span
+          >
+          <span id="spanTrim">this is a normal sentence to transform </span>
+        </div>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
