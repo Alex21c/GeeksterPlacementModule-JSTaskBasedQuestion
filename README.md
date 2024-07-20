@@ -13,3 +13,8 @@
 
 ## Author
 [Abhishek kumar](https://www.linkedin.com/in/alex21c/), ([Geekster](https://geekster.in/) MERN Stack FS-14 Batch)
+
+## Screenshots
+![](./Screenshots/q1-counter.png)
+![](./Screenshots/q2-string-transformers.png)
+![](./Screenshots/q3-bill-split.png)
