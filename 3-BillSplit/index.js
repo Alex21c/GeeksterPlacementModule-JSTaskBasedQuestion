@@ -62,7 +62,8 @@ function reset(event) {
   spanEachPersonBill.innerText = "₹ ";
 }
 
-function generateBill() {
+function generateBill(event) {
+  event.preventDefault();
   // each person bill ?
   eachPersonBill = Math.ceil(totalBill / numOfPeople);
   spanTipAmount.innerText = "₹ " + Math.ceil(tip);
