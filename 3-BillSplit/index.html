@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Q.3 Bill Split" />
+    <meta
+      name="keywords"
+      content="Q.3 Bill Split, javascript, geekster placement module"
+    />
+    <meta name="author" content="Abhishek kumar" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Q.3 Bill Split</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="bg-[#343d3f] text-[#e8eaed] text-[1.2rem] items-center">
+    <div
+      class="border-[.12rem] border-yellow-100 rounded-2xl m-[auto] mb-[2rem] w-[45rem] mt-[2rem] shadow-yellow-100 shadow-md flex flex-col gap-[1rem]"
+    >
+      <header
+        class="flex gap-[.3rem] flex-col bg-yellow-200 rounded-t-xl p-[1rem] text-[#343d3f]"
+      >
+        <h1 class="text-[2rem]">
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            href="https://sadanandpai.github.io/frontend-mini-challenges/javascript/src/challenges/bill-spilt/"
+            title="Original Question URL"
+            >Q.3 Bill Split</a
+          >
+        </h1>
+        <h2>
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Author: Abhishek kumar"
+            href="https://www.linkedin.com/in/alex21c/"
+            >Abhishek kumar</a
+          >
+          |
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Geekster"
+            href="https://www.geekster.in/"
+            >Geekster</a
+          >
+          FS-14 Batch
+        </h2>
+      </header>
+
+      <section class="flex gap-[2rem] p-[2rem] pt-[1rem]">
+        <div>
+          <form action="#" class="flex flex-col gap-[1rem]">
+            <div class="flex flex-col gap-[.5rem]">
+              <label for="inputBillAmount" class="font-medium">Bill</label>
+              <div class="w-[100%] relative">
+                <span
+                  class="absolute text-[#343d3f] text-[1.8rem] left-[1rem] top-[.1rem]"
+                  >₹</span
+                >
+                <input
+                  id="inputBillAmount"
+                  class="p-[.5rem] rounded-md text-[#343d3f] font-medium text-[1.3rem] bg-stone-200 w-[100%] pl-[2.5rem]"
+                  type="number"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[.5rem]">
+              <div class="font-medium">Select Tip</div>
+              <div
+                class="grid grid-cols-3 grid-rows-2 gap-[.5rem] text-blue-300"
+              >
+                <button
+                  class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.5rem] border-yellow-200 w-[100%] opacity-[.8] hover:opacity-[1] p-[.5rem] btnTip"
+                  onclick="setTipAsPercentOfBillAmount(event, 0.05)"
+                >
+                  5%
+                </button>
+                <button
+                  class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.5rem] border-yellow-200 w-[100%] opacity-[.8] hover:opacity-[1] p-[.5rem] btnTip"
+                  onclick="setTipAsPercentOfBillAmount(event, 0.10)"
+                >
+                  10%
+                </button>
+                <button
+                  class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.5rem] border-yellow-200 w-[100%] opacity-[.8] hover:opacity-[1] p-[.5rem] btnTip"
+                  onclick="setTipAsPercentOfBillAmount(event, 0.15)"
+                >
+                  15%
+                </button>
+                <button
+                  class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.5rem] border-yellow-200 w-[100%] opacity-[.8] hover:opacity-[1] p-[.5rem] btnTip"
+                  onclick="setTipAsPercentOfBillAmount(event, 0.25)"
+                >
+                  25%
+                </button>
+                <button
+                  class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.5rem] border-yellow-200 w-[100%] opacity-[.8] hover:opacity-[1] p-[.5rem] btnTip"
+                  onclick="setTipAsPercentOfBillAmount(event, 0.50)"
+                >
+                  50%
+                </button>
+                <button
+                  class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.5rem] border-yellow-200 w-[100%] opacity-[.8] hover:opacity-[1] p-[.5rem] btnTip"
+                  onclick="setTipAsPercentOfBillAmount(event, 0.75)"
+                >
+                  75%
+                </button>
+              </div>
+              <input
+                class="p-[.5rem] rounded-md text-[#343d3f] text-[1.3rem] bg-stone-200 w-[100%] outline-none focus:border-yellow-300 border-[#343d3f] border-[.10rem]"
+                type="number"
+                id="inputCustomTip"
+                placeholder="Custom Tip"
+              />
+            </div>
+
+            <div class="flex flex-col gap-[.5rem]">
+              <label for="inputNoOfPeople" class="font-medium">
+                Number of People
+              </label>
+              <input
+                class="p-[.5rem] rounded-md text-[#343d3f] text-[1.3rem] bg-stone-200"
+                type="number"
+                id="inputNoOfPeople"
+                placeholder="No of people"
+              />
+            </div>
+
+            <button
+              class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[100%] opacity-[.8] hover:opacity-[1] p-[.5rem]"
+              id="btnGenerateBill"
+            >
+              Generate Bill
+            </button>
+          </form>
+        </div>
+        <div
+          class="flex flex-col gap-[1rem] bg-yellow-200 text-[#343d3f] p-[1rem] rounded-xl w-[15rem] h-[15rem] justify-center"
+        >
+          <div>
+            <span>Tip amount</span>
+            <span class="font-medium text-[1.4rem]" id="spanTipAmount">₹</span>
+          </div>
+          <div>
+            <span>Total</span>
+            <span class="font-medium text-[1.4rem]" id="spanTotal">₹</span>
+          </div>
+          <div>
+            <span>Each Person BIll</span>
+            <span class="font-medium text-[1.4rem]" id="spanEachPersonBill"
+              >₹</span
+            >
+          </div>
+          <input
+            type="submit"
+            value="Reset"
+            id="btnReset"
+            class="bg-stone-800 text-yellow-200 rounded-xl font-medium text-[1.5rem] transition hover:bg-stone-900 border-[.15rem] border-stone-200 w-[100%] opacity-[.8] hover:opacity-[1] p-[.5rem]"
+          />
+        </div>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
