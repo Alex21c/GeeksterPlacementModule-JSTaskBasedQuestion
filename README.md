@@ -18,3 +18,4 @@
 ![](./Screenshots/q1-counter.png)
 ![](./Screenshots/q2-string-transformers.png)
 ![](./Screenshots/q3-bill-split.png)
+![](./Screenshots/q4-multi-typing.png)
