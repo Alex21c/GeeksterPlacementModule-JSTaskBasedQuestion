@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Q.5 Fitness Tracker" />
+    <meta
+      name="keywords"
+      content="Q.5 Fitness Tracker, javascript, geekster placement module"
+    />
+    <meta name="author" content="Abhishek kumar" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Q.5 Fitness Tracker</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="bg-[#343d3f] text-[#e8eaed] text-[1.2rem] items-center">
+    <div
+      class="border-[.12rem] border-yellow-100 rounded-2xl m-[auto] mb-[2rem] w-[55rem] mt-[2rem] shadow-yellow-100 shadow-md flex flex-col gap-[1rem]"
+    >
+      <header
+        class="flex gap-[.3rem] flex-col bg-yellow-200 rounded-t-xl p-[1rem] text-[#343d3f]"
+      >
+        <h1 class="text-[2rem]">
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            href="https://sadanandpai.github.io/frontend-mini-challenges/javascript/src/challenges/fitness-tracker/"
+            title="Original Question URL"
+            >Q.5 Fitness Tracker</a
+          >
+        </h1>
+        <h2>
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Author: Abhishek kumar"
+            href="https://www.linkedin.com/in/alex21c/"
+            >Abhishek kumar</a
+          >
+          |
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Geekster"
+            href="https://www.geekster.in/"
+            >Geekster</a
+          >
+          FS-14 Batch
+        </h2>
+      </header>
+
+      <section class="p-[1rem] pt-[0rem] flex flex-col gap-[1rem]">
+        <h2 class="font-medium text-[1.5rem]">Add a Workout</h2>
+        <form class="w-[100%] flex gap-[1rem] ">
+          <div class="flex flex-col gap-[.5rem] ">
+
+            <div class="flex items-center">
+              <label for="inputWorkoutType " class="w-[11rem] text-right pr-[1rem]">Workout Type</span></label>
+              <input
+              required
+                class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.5rem] rounded-md outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300 font-semibold text-[1.3rem]
+                w-[30rem] 
+                "              
+                type="text"
+                id="inputWorkoutType"
+                placeholder="e.g. cycling"
+              />
+            </div>
+            <div class="flex items-center">
+              <label for="inputWorkoutDuration" class="w-[11rem] text-right pr-[1rem]">Duration (minutes)</span></label>
+              <input
+              required
+              class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.5rem] rounded-md outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300 font-semibold text-[1.3rem]
+              w-[10rem] 
+              "     
+                placeholder="e.g. 30"
+                type="number"
+                id="inputWorkoutDuration"
+                min="0"
+                max="1440"
+                
+              />
+            </div>
+          </div>
+
+          <input
+            type="submit"
+            value="Add"
+            id="btnAddWorkout"
+            class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[10rem] opacity-[.8] hover:opacity-[1] p-[.5rem]"
+          />
+
+        </form>
+      </section>
+
+      <section class="p-[1rem] pt-[0rem] flex flex-col gap-[1rem]">
+        <h2 class="font-medium text-[1.5rem]">Workout Log</h2>
+        <ul id="ulWorkoutLog">
+          
+        </ul>
+
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
