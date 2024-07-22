@@ -20,3 +20,4 @@
 ![](./Screenshots/q3-bill-split.png)
 ![](./Screenshots/q4-multi-typing.png)
 ![](./Screenshots/q5-fitness-tracker.png)
+![](./Screenshots/q6-guess-the-number.png)
