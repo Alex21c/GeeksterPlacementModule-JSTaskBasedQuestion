@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Q.7 Progress Bar" />
+    <meta
+      name="keywords"
+      content="Q.7 Progress Bar, javascript, geekster placement module"
+    />
+    <meta name="author" content="Abhishek kumar" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Q.7 Progress Bar</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <style>
+      #progressBar::-webkit-progress-value {
+        background-color: rgb(96 165 250);
+      }
+    </style>
+  </head>
+  <body class="bg-[#343d3f] text-[#e8eaed] text-[1.2rem] items-center">
+    <div
+      class="border-[.12rem] border-yellow-100 rounded-2xl m-[auto] mb-[2rem] w-[35rem] mt-[2rem] shadow-yellow-100 shadow-md flex flex-col gap-[1rem]"
+    >
+      <header
+        class="flex gap-[.3rem] flex-col bg-yellow-200 rounded-t-xl p-[1rem] text-[#343d3f]"
+      >
+        <h1 class="text-[2rem]">
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            href="https://sadanandpai.github.io/frontend-mini-challenges/javascript/src/challenges/progress-bar/"
+            title="Original Question URL"
+            >Q.7 Progress Bar</a
+          >
+        </h1>
+        <h2>
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Author: Abhishek kumar"
+            href="https://www.linkedin.com/in/alex21c/"
+            >Abhishek kumar</a
+          >
+          |
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Geekster"
+            href="https://www.geekster.in/"
+            >Geekster</a
+          >
+          FS-14 Batch
+        </h2>
+      </header>
+
+      <section class="flex flex-col gap-[2rem] p-[2rem] pt-[1rem]">
+        <div class="relative">
+          <span
+            id="spanProgressLabel"
+            class="absolute left-[45%] font-medium text-[2rem]"
+            >7%</span
+          >
+          <progress
+            id="progressBar"
+            max="100"
+            value="7"
+            class="w-[100%] h-[3rem] rounded-md overflow-hidden"
+          ></progress>
+        </div>
+        <div class="flex gap-[.5rem]">
+          <div class="flex flex-col gap-[.5rem]">
+            <button
+              id="btnStart"
+              class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[23rem] opacity-[.8] hover:opacity-[1] p-[.5rem] text-center"
+            >
+              Start
+            </button>
+            <button
+              id="btnStop"
+              class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[23rem] opacity-[.8] hover:opacity-[1] p-[.5rem] text-center"
+            >
+              Stop
+            </button>
+          </div>
+          <button
+            id="btnReset"
+            class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[23rem] opacity-[.8] hover:opacity-[1] p-[.5rem] text-center"
+          >
+            Reset
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
