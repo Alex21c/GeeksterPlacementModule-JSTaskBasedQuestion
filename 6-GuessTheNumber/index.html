@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Q.6 Guess the Number" />
+    <meta
+      name="keywords"
+      content="Q.6 Guess the Number, javascript, geekster placement module"
+    />
+    <meta name="author" content="Abhishek kumar" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Q.6 Guess the Number</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="bg-[#343d3f] text-[#e8eaed] text-[1.2rem] items-center">
+    <div
+      class="border-[.12rem] border-yellow-100 rounded-2xl m-[auto] mb-[2rem] w-[35rem] mt-[2rem] shadow-yellow-100 shadow-md flex flex-col gap-[1rem]"
+    >
+      <header
+        class="flex gap-[.3rem] flex-col bg-yellow-200 rounded-t-xl p-[1rem] text-[#343d3f]"
+      >
+        <h1 class="text-[2rem]">
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            href="https://sadanandpai.github.io/frontend-mini-challenges/javascript/src/challenges/guess-the-number/"
+            title="Original Question URL"
+            >Q.6 Guess the Number</a
+          >
+        </h1>
+        <h2>
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Author: Abhishek kumar"
+            href="https://www.linkedin.com/in/alex21c/"
+            >Abhishek kumar</a
+          >
+          |
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Geekster"
+            href="https://www.geekster.in/"
+            >Geekster</a
+          >
+          FS-14 Batch
+        </h2>
+      </header>
+
+      <div class="flex flex-col gap-[2rem] p-[3rem] pt-[1rem]">
+        <section class="flex flex-col gap-[1rem] items-center">
+          <form class="flex flex-col gap-[.5rem]">
+            <div class="flex flex-col gap-[.5rem]">
+              <span class="font-semibold text-[1.3rem]"
+                >Guess a number between
+              </span>
+              <div>
+                <input
+                  class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.5rem] rounded-md outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300 font-semibold text-[1.3rem] w-[10rem]"
+                  type="number"
+                  min="1"
+                  value="1"
+                  id="inputMinGuess"
+                />
+                <span>and</span>
+                <input
+                  class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.5rem] rounded-md outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300 font-semibold text-[1.3rem] w-[10rem]"
+                  type="number"
+                  min="5"
+                  value="5"
+                  id="inputMaxGuess"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[.5rem]">
+              <label for="inputUserGuess" class="font-semibold text-[1.3rem]"
+                >Yours Guess?</label
+              >
+              <h2
+                id="h2YourGuessProximity"
+                class="font-semibold text-[1.8rem] text-blue-300 text-center displayNone w-[25rem] text-wrap"
+              ></h2>
+              <input
+                class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.5rem] rounded-md outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300 font-semibold text-[1.3rem] w-[23rem]"
+                type="number"
+                placeholder="Enter Yours Guess"
+                id="inputUserGuess"
+              />
+
+              <input
+                type="submit"
+                value="Submit"
+                id="btnSubmitGuess"
+                class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[23rem] opacity-[.8] hover:opacity-[1] p-[.5rem]"
+              />
+            </div>
+          </form>
+        </section>
+
+        <section class="flex flex-col gap-[1rem]">
+          <div class="flex flex-col gap-[.5rem]">
+            <h2 class="font-semibold text-[1.3rem]">Your Guesses</h2>
+            <p id="pHavingGuessesLog"></p>
+          </div>
+        </section>
+
+        <section class="flex flex-col gap-[1rem] items-center">
+          <h2
+            class="font-semibold text-[2rem] text-blue-300 displayNone"
+            id="h2AnswerIs"
+          >
+            Answer:
+          </h2>
+
+          <button
+            id="btnResetTheGame"
+            class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[23rem] opacity-[.8] hover:opacity-[1] p-[.5rem] text-center"
+          >
+            Reset
+          </button>
+
+          <button
+            id="btnTellUserTheAnswer"
+            class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[23rem] opacity-[.8] hover:opacity-[1] p-[.5rem] text-center"
+          >
+            Tell me the Answer !
+          </button>
+        </section>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
