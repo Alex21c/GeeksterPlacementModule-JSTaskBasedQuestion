@@ -26,3 +26,4 @@
 ![](./Screenshots/q5-fitness-tracker.png)
 ![](./Screenshots/q6-guess-the-number.png)
 ![](./Screenshots/q7-progress-bar.png)
+![](./Screenshots/q8-chips-input.png)
