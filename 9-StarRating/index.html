@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Q.9 Star Rating" />
+    <meta
+      name="keywords"
+      content="Q.9 Star Rating, javascript, geekster placement module"
+    />
+    <meta name="author" content="Abhishek kumar" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Q.9 Star Rating</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./fontAwesomeProIcons/fontAwesomeIcons.css" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <style>
+      #progressBar::-webkit-progress-value {
+        background-color: rgb(96 165 250);
+      }
+    </style>
+  </head>
+  <body class="bg-[#343d3f] text-[#e8eaed] text-[1.2rem] items-center">
+    <div
+      class="border-[.12rem] border-yellow-100 rounded-2xl m-[auto] mb-[2rem] w-[45rem] mt-[2rem] shadow-yellow-100 shadow-md flex flex-col gap-[1rem]"
+    >
+      <header
+        class="flex gap-[.3rem] flex-col bg-yellow-200 rounded-t-xl p-[1rem] text-[#343d3f]"
+      >
+        <h1 class="text-[2rem]">
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            href="https://sadanandpai.github.io/frontend-mini-challenges/javascript/src/challenges/star-rating/"
+            title="Original Question URL"
+            >Q.9 Star Rating</a
+          >
+        </h1>
+        <h2>
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Author: Abhishek kumar"
+            href="https://www.linkedin.com/in/alex21c/"
+            >Abhishek kumar</a
+          >
+          |
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Geekster"
+            href="https://www.geekster.in/"
+            >Geekster</a
+          >
+          FS-14 Batch
+        </h2>
+      </header>
+
+      <section class="flex flex-col gap-[1rem] p-[2rem] pt-[1rem] items-center">
+        <div
+          class="text-[3rem] text-yellow-300 flex gap-[.5rem]"
+          id="starsWrapper"
+        >
+          <i id="star1" class="fa-solid fa-star cursor-pointer"></i>
+          <i id="star2" class="fa-solid fa-star cursor-pointer"></i>
+          <i id="star3" class="fa-solid fa-star cursor-pointer"></i>
+          <i id="star4" class="fa-solid fa-star cursor-pointer"></i>
+          <i id="star5" class="fa-solid fa-star cursor-pointer"></i>
+        </div>
+        <div>Click to update the rating</div>
+
+        <div id="emoji" class="text-[7rem]">😎</div>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
