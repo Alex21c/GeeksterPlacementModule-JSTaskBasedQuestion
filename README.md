@@ -1,6 +1,5 @@
 # 10 JS Task based Question | Geekster Placement Module #7
-
-![](thumbnail.png)
+![](./Screenshots/thumbnail.png)
 
 ## Hosted Version of the Project:
 
