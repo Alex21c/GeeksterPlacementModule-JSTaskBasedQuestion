@@ -7,7 +7,7 @@ const btnStart = document.querySelector("button#btnStart");
 const btnStop = document.querySelector("button#btnStop");
 const btnReset = document.querySelector("button#btnReset");
 const validationDelayInMilliseconds = 400;
-const countdownSpeed = 200; // in seconds
+const countdownSpeed = 1000; // in seconds
 let intervalID = null;
 
 const defaultState = {
