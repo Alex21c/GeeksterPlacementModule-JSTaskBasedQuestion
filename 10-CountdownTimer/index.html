@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Q.10 Countdown Timer" />
+    <meta
+      name="keywords"
+      content="Q.10 Countdown Timer, javascript, geekster placement module"
+    />
+    <meta name="author" content="Abhishek kumar" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Q.10 Countdown Timer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./fontAwesomeProIcons/fontAwesomeIcons.css" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <style>
+      #progressBar::-webkit-progress-value {
+        background-color: rgb(96 165 250);
+      }
+    </style>
+  </head>
+  <body class="bg-[#343d3f] text-[#e8eaed] text-[1.2rem] items-center">
+    <div
+      class="border-[.12rem] border-yellow-100 rounded-2xl m-[auto] mb-[2rem] w-[45rem] mt-[2rem] shadow-yellow-100 shadow-md flex flex-col gap-[1rem]"
+    >
+      <header
+        class="flex gap-[.3rem] flex-col bg-yellow-200 rounded-t-xl p-[1rem] text-[#343d3f]"
+      >
+        <h1 class="text-[2rem]">
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            href="https://sadanandpai.github.io/frontend-mini-challenges/javascript/src/challenges/count-down-timer/"
+            title="Original Question URL"
+            >Q.10 Countdown Timer</a
+          >
+        </h1>
+        <h2>
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Author: Abhishek kumar"
+            href="https://www.linkedin.com/in/alex21c/"
+            >Abhishek kumar</a
+          >
+          |
+          <a
+            class="underline font-medium text-blue-400 hover:text-blue-600 transition"
+            title="Geekster"
+            href="https://www.geekster.in/"
+            >Geekster</a
+          >
+          FS-14 Batch
+        </h2>
+      </header>
+
+      <section class="p-[1rem] flex flex-col items-center gap-[1rem]">
+        <div class="flex w-[40rem] text-[3rem] gap-[.2rem]">
+          <div class="relative w-[100%] mt-[2rem]">
+            <input
+              class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.3rem] rounded-md outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300 font-semibold w-[100%] text-center"
+              type="number"
+              value="0"
+              min="0"
+              max="9"
+              id="inputM1"
+            />
+            <span class="absolute top-[-4rem] left-[3rem] text-stone-300"
+              >M</span
+            >
+          </div>
+          <div class="relative w-[100%] mt-[2rem]">
+            <input
+              class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.3rem] rounded-md outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300 font-semibold w-[100%] text-center"
+              type="number"
+              value="0"
+              min="0"
+              max="9"
+              id="inputM2"
+            />
+            <span class="absolute top-[-4rem] left-[3rem] text-stone-300"
+              >M</span
+            >
+          </div>
+
+          <span class="font-semibold text-[5rem] leading-[8rem] px-[.5rem]"
+            >:</span
+          >
+          <div class="relative w-[100%] mt-[2rem]">
+            <input
+              class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.3rem] rounded-md outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300 font-semibold w-[100%] text-center"
+              type="number"
+              value="0"
+              min="0"
+              max="5"
+              id="inputS1"
+            />
+            <span class="absolute top-[-4rem] left-[3rem] text-stone-300"
+              >S</span
+            >
+          </div>
+          <div class="relative w-[100%] mt-[2rem]">
+            <input
+              class="text-[#343d3f] bg-stone-200 px-[1rem] py-[.3rem] rounded-md outline-none border-[.15rem] border-[#343d3f] focus:border-yellow-300 font-semibold w-[100%] text-center"
+              type="number"
+              value="9"
+              min="0"
+              max="9"
+              id="inputS2"
+            />
+            <span class="absolute top-[-4rem] left-[3rem] text-stone-300"
+              >S</span
+            >
+          </div>
+        </div>
+        <div class="flex gap-[.5rem]">
+          <div class="flex flex-col gap-[.5rem]">
+            <button
+              id="btnStart"
+              class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[19rem] opacity-[.8] hover:opacity-[1] p-[.5rem] text-center"
+            >
+              Start
+            </button>
+            <button
+              id="btnStop"
+              class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[19rem] opacity-[.8] hover:opacity-[1] p-[.5rem] text-center"
+            >
+              Stop
+            </button>
+          </div>
+          <button
+            id="btnReset"
+            class="bg-yellow-200 text-[#343d3f] rounded-md font-medium text-[1.7rem] transition hover:bg-yellow-300 border-[.15rem] border-stone-200 w-[19rem] opacity-[.8] hover:opacity-[1] p-[.5rem] text-center"
+          >
+            Reset
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
